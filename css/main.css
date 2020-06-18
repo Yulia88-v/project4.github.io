@@ -1,0 +1,479 @@
+/*****CSS document****/
+/******fonts******
+@font-face {
+    font-family: 'yeseva_oneregular';
+    src: url('yesevaone-regular-webfont.woff2') format('woff2'),
+         url('yesevaone-regular-webfont.woff') format('woff'),
+         url('yesevaone-regular-webfont.svg#yeseva_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+***/
+*{
+	margin: 0;
+	padding: 0;
+}
+/********header******/
+.header{
+	background: url(../img/background_header.png) no-repeat;
+	background-size: cover;
+    position: relative;
+}
+.infinity-slider-wrap{
+   
+    width: 100%;
+    height: 640px;
+   
+    position: relative;
+}
+.infinity-slider{
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+    position: relative;
+}
+.infinity-slider .content{
+    width: 100%;
+    height: 640px;
+    position: absolute;
+    
+    opacity:1;
+    transition: opacity 2s;
+}
+.infinity-slider .opacity0{
+opacity: 0;
+
+}
+
+ .content h1{
+    position: relative;
+left: 84px;
+top: 45px;
+font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 80px;
+line-height: 92px;
+
+color: #381D0D;
+-webkit-text-stroke: 1px  #A50C27;
+
+}
+.content p{
+position: relative;
+left: 89px;
+top: 60px;
+font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 26px;
+line-height: 30px;
+
+color: #381D0D;
+-webkit-text-stroke: 1px  rgba(165, 12, 39, 0.5);
+}
+ .content a.button {
+position: relative;
+left: 120px;
+top:100px;
+background:rgba(225, 79, 114, 0.9);
+padding: 20px 60px;
+color: #381D0D;
+font-size: 32px;
+font-family: Yeseva One;
+border-radius: 50px;
+}
+
+/*********Navigation*******/
+.logo {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+}
+.responsive_menu{
+display:none;
+}
+.nav-menu{
+    position: relative;
+    margin-top: 50px;
+   
+}
+.nav-menu ul{
+    list-style: none;
+}
+.nav-menu .desk{
+     height: 230px;
+     margin-bottom: 10px;
+
+}
+.nav-menu .desk:nth-child(1){
+    background: url(../img/desk1.png) no-repeat;
+    background-size: cover;
+
+}
+.nav-menu .desk:nth-child(2){
+    background: url(../img/desk2.png) no-repeat;
+    background-size: cover;
+}
+.nav-menu .desk:nth-child(3){
+    background: url(../img/desk3.png) no-repeat;
+    background-size: cover;
+}
+.nav-menu .desk:nth-child(4){
+    background: url(../img/desk4.png) no-repeat;
+    background-size: cover;
+}
+.nav-menu a.item-link{
+    position: relative;
+    top: 70px;
+    left: 80px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+     line-height: 42px;
+color: #E14F72;
+transition: 1s;
+}
+
+.desk:nth-child(3) > li:nth-child(1) > a:nth-child(1) {
+top: 100px;
+}
+.desk:nth-child(4) > li:nth-child(1) > a:nth-child(1) {
+top: 100px;
+}
+.nav-menu .desk:hover{
+    filter: brightness(1.3);
+}
+.nav-menu .desk:hover a.item-link,
+.nav-menu .desk:focus a.item-link{
+    color:#D980F9;
+    text-decoration: none;
+}
+.nav-menu .active a.item-link{
+    color:#D980F9;   
+}
+
+/**********About me*******/
+
+.about_text{
+    position: relative;
+    margin-top: 170px;
+}
+.about_text h2{
+    font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+color: #381D0D;
+-webkit-text-stroke: 1px  #A50C27;
+}
+.about_text p{
+   font-family: Yeseva One;
+   font-style: italic;
+   color:#000; 
+   font-size: 25px;
+   margin-top: 20px;
+   
+}
+
+.about_picture{
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+
+}
+.about_picture .image{
+    width: 750px; 
+}
+.about_picture .image img{
+    max-width: 100%;
+}
+/*******Top recipes*****/
+.recipes{
+    position: relative;
+    margin-top: 120px;
+}
+.recipes h2{
+font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.2em;
+font-feature-settings: 'tnum' on, 'onum' on;
+color: #381D0D;
+-webkit-text-stroke: 1px #A50C27;
+}
+/***********3d slider*******/
+.box-sl{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  position: relative;
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+}
+.card .content{
+width: 400px;
+padding: 30px;
+box-sizing: border-box;
+}
+.card .sliderImg{
+  position: relative;
+  
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+.card .content h2{
+  color: #381D0D;
+  font-size: 30px;
+  font-family: Yeseva One;
+  text-align: center;
+}
+
+.card .content ul li{
+  list-style: none;
+  display: inline-block;
+margin-left: 100px;
+margin-top: 20px;  
+}
+.card .content a{
+  color: #381D0D;
+  font-size: 25px;
+  font-family: Yeseva One;
+  padding: 20px;
+  background: #E14F72;
+  text-decoration: none;
+  border-radius: 50px;
+  position: relative;
+    top:50px;
+    margin-left: 80px;
+}
+.swiper-wrapper{
+  width: 800px;
+
+}
+.swiper-slide{
+  width: 400px;
+}
+/*********Promotion*******/
+.prom{
+    background: url(../img/background_prom.png),no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+.back_prom{
+      background: rgba(255,255,255,0.7);
+      height: 550px;
+}
+.prom_text h2{
+  position: relative;
+font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 70px;
+line-height: 72px;
+text-align: center;
+
+color: #381D0D;
+-webkit-text-stroke: 1px  rgba(165, 12, 39, 0.5); 
+margin-top: 100px;
+}
+.prom_text p{
+position: relative;
+text-align: center;
+font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 26px;
+line-height: 30px;
+color: #381D0D;
+-webkit-text-stroke: 1px  rgba(165, 12, 39, 0.5);
+margin-top:30px;
+}
+.prom_text a.button {
+position: relative;
+top: 80px;
+left: 650px;
+background:rgba(225, 79, 114, 0.9);
+padding: 20px 60px;
+color: #381D0D;
+font-size: 32px;
+font-family: Yeseva One;
+border-radius: 50px;
+text-decoration: none;
+}
+
+/**********watching live******/
+.watching{
+    position: relative;
+    margin-top: 50px;
+}
+.video iframe{
+    border-radius: 50px;
+}
+
+.video_text h2{
+font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+color: #381D0D;
+-webkit-text-stroke: 1px #A50C27;
+}
+.video_text p{
+    font-family: Yeseva One;
+font-style: italic;
+color: #000;
+font-size: 25px;
+margin-top: 20px;
+text-align: center;
+}
+.video_text h3{
+    font-family: Yeseva One;
+font-style: italic;
+color: #000;
+font-size: 25px;
+margin-top: 20px;
+text-align: center;
+}
+/**********bloggin*****/
+.cooking{
+   position: relative;
+    margin-top: 50px; 
+}
+.cooking h2{
+    font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 26px;
+line-height: 42px;
+text-align: center;
+color: #381D0D;
+-webkit-text-stroke: 1px #A50C27;
+}
+.blogg a.button {
+position: relative;
+top:40px;
+left:120px;
+background:rgba(225, 79, 114, 0.9);
+padding: 10px 40px;
+color: #381D0D;
+font-size: 32px;
+font-family: Yeseva One;
+border-radius: 50px;
+text-decoration: none;
+}
+.blogg:nth-child(3) > h2:nth-child(2) {
+margin-top: 48px;
+}
+.blogg:nth-child(3) > a:nth-child(3) {
+top: 58px;
+}
+.blogg:nth-child(1) > a:nth-child(3) {
+top: 44px;
+}
+/********Footer********/
+.footer{
+   background: url(../img/background_footer.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 90px;
+    height: 600px;
+}
+.connection{
+    margin-top: 160px;
+    text-align: center;
+    z-index: 3;
+}
+.connection input.email{
+    padding: 20px 0 20px 30px ;
+    width: 410px;
+    background: rgba(92,95,102,0.3);
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'vidaloka_regular';
+    border: none;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+.connection input.sent{
+    padding: 20px 30px 20px 30px;
+    background: rgba(92,95,102,0.3);
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'vidaloka_regular';
+    border: none;
+    margin-right: 20px;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+.connection input.sent:hover{
+    background: rgba(225,79,114,0.5);
+    color: #000;    
+}
+.footer_menu ul li{
+list-style: none;
+text-align: center;
+margin-top: 50px;
+}
+.footer_menu ul li a{
+    text-decoration: none;
+    font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+
+color: #381D0D;
+
+-webkit-text-stroke: 1px rgba(165, 12, 39, 0.81);
+}
+.end{
+    margin-top: 20px;
+  text-decoration: none;
+    font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+color: #381D0D;
+-webkit-text-stroke: 1px rgba(165, 12, 39, 0.81);  
+}
+.design{
+    margin-top: 30px;
+   text-align: center;
+   background: rgba(199,199,199,0.4); 
+}
+/********8rating******/
+.rating{
+  display: flex;
+}
+.fa-star{
+  color:grey;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.fa-star.active{
+  color: yellow;
+}
+.fa-thumbs-up{
+  color:grey;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
